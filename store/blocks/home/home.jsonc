@@ -7,10 +7,14 @@
       "flex-layout.row#deals",
       "__fold__",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+
+       "flex-layout.row#produtos-linha-1",
+       "flex-layout.row#produtos-linha-2",
+
+   //   "flex-layout.row#shelf",
+    //  "info-card#home",
+     // "rich-text#question",
+     // "rich-text#link",
       "newsletter"
     ]
   },
@@ -22,12 +26,12 @@
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "/arquivos/BanneIndustria.png",
+          "mobileImage": "/arquivos/BanneIndustria.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "/arquivos/BanneIndustria.png",
+          "mobileImage": "/arquivos/BanneIndustria.png"
         }
       ]
     }
@@ -45,12 +49,72 @@
     }
   },
 
-  "rich-text#shelf-title": {
+
+
+
+  "flex-layout.row#produtos-linha-1":{
+    "children": [
+      "flex-layout.col#produtos-linha-1",
+       "flex-layout.col#produtos-linha-2",
+        "flex-layout.col#produtos-linha-3"
+     
+    ],
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "blockClass": "home-bloco-linhas-1"
     }
   },
+
+
+   "flex-layout.col#produtos-linha-1":{
+      "children": [
+      "flex-layout.row#produtos-linha-1-premium"
+    ],
+
+    "props": {
+  "blockClass": "linha-premium-banner-home-bloco"
+}
+   },
+
+
+   "flex-layout.row#produtos-linha-1-premium":{
+    "children": [
+      "flex-layout.col#produtos-linha-1-premium",
+        "flex-layout.row#shelf-linha-premium"
+    ]
+   },
+
+
+"flex-layout.col#produtos-linha-1-premium":{
+
+  "children": ["rich-text#linha-premium","rich-text#linha-premium-bt"
+],
+
+"props": {
+  "blockClass": "linha-premium-banner-home-bg"
+}
+},
+
+"rich-text#linha-premium": {
+  "props": {
+    "text": "Linha Premium",
+    "blockClass": "linha-premium-estrela-home"
+  }
+},
+
+"rich-text#linha-premium-bt": {
+  "props": {
+    "text": "[Ver todos](/linha-premium)",
+    "blockClass": "linha-premium-btr-home"
+  }
+},
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Produtos",
+      "blockClass": "shelfTitle-produtos-home"
+    }
+  },
+
   "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
@@ -74,12 +138,439 @@
     }
   },
 
+  "flex-layout.row#shelf-linha-premium": {
+    "children": [
+      "list-context.product-list#linha-premium"
+    ]
+  },
+  "list-context.product-list#linha-premium": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#demo-products-linha-premium"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "137"
+    }
+  },
+  "slider-layout#demo-products-linha-premium": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.col#produtos-linha-2":{
+    "children": [
+    "flex-layout.row#produtos-linha-2-demerara"
+  ],
+  
+"props": {
+  "blockClass": "linha-demerara-banner-home-bloco"
+}
+ },
+
+ "flex-layout.row#produtos-linha-2-demerara":{
+  "children": [
+    "flex-layout.col#produtos-linha-2-demerara",
+      "flex-layout.row#shelf-linha-demerara"
+  ]
+ },
+
+"flex-layout.col#produtos-linha-2-demerara":{
+
+"children": ["rich-text#linha-demerara","rich-text#linha-demerara-bt"
+],
+"props": {
+  "blockClass": "linha-demerara-banner-home-bg"
+}
+},
+
+"rich-text#linha-demerara": {
+"props": {
+  "text": "Demerara",
+  "blockClass": "linha-estrela-demerara"
+}
+},
+
+"rich-text#linha-demerara-bt": {
+"props": {
+  "text": "[Ver todos](/demerara)",
+  "blockClass": "linha-br-demerara"
+}
+},
+
+"flex-layout.row#shelf-linha-demerara": {
+  "children": [
+    "list-context.product-list#linha-demerara"
+  ]
+},
+"list-context.product-list#linha-demerara": {
+  "blocks": [
+    "product-summary.shelf"
+  ],
+  "children": [
+    "slider-layout#demo-products-linha-demerara"
+  ],
+  "props": {
+    "orderBy": "OrderByTopSaleDESC",
+    "collection": "138"
+  }
+},
+"slider-layout#demo-products-linha-demerara": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": true,
+    "fullWidth": false,
+    "blockClass": "shelf"
+  }
+},
+
+"flex-layout.col#produtos-linha-3":{
+  "children": [
+  "flex-layout.row#produtos-linha-3-organico"
+],
+"props": {
+  "blockClass": "linha-organico-banner-home-bloco"
+}
+},
+
+
+"flex-layout.row#produtos-linha-3-organico":{
+"children": [
+  "flex-layout.col#produtos-linha-3-organico",
+    "flex-layout.row#shelf-linha-organico"
+]
+},
+
+
+"flex-layout.col#produtos-linha-3-organico":{
+
+"children": ["rich-text#linha-organico","rich-text#linha-organico-bt"
+
+],
+
+"props": {
+  "blockClass": "linha-organico-banner-home-bloco-bg"
+}
+},
+
+"rich-text#linha-organico": {
+"props": {
+"text": "Orgânico",
+"blockClass": "linha-organico-estrela"
+}
+},
+
+"rich-text#linha-organico-bt": {
+"props": {
+"text": "[Ver todos](/organico)",
+"blockClass": "linha-organico-bt"
+}
+},
+
+"flex-layout.row#shelf-linha-organico": {
+"children": [
+  "list-context.product-list#linha-organico"
+]
+},
+"list-context.product-list#linha-organico": {
+"blocks": [
+  "product-summary.shelf"
+],
+"children": [
+  "slider-layout#demo-products-linha-organico"
+],
+"props": {
+  "orderBy": "OrderByTopSaleDESC",
+  "collection": "141"
+}
+},
+"slider-layout#demo-products-linha-organico": {
+"props": {
+  "itemsPerPage": {
+    "desktop": 1,
+    "tablet": 1,
+    "phone": 1
+  },
+  "infinite": true,
+  "fullWidth": false,
+  "blockClass": "shelf"
+}
+},
+
+"flex-layout.row#produtos-linha-2":{
+    "children": [
+      "flex-layout.col#produtos-linha-4",
+      "flex-layout.col#produtos-linha-5",
+      "flex-layout.col#produtos-linha-6"
+     
+    ],
+    "props": {
+      "blockClass": "home-bloco-linhas-2"
+    }
+  },
+
+
+
+"flex-layout.col#produtos-linha-4":{
+  "children": [
+  "flex-layout.row#produtos-linha-4-mascavo"
+],
+
+"props": {
+  "blockClass": "linha-macavo-banner-home-bloco"
+}
+},
+
+
+"flex-layout.row#produtos-linha-4-mascavo":{
+"children": [
+  "flex-layout.col#produtos-linha-4-mascavo",
+    "flex-layout.row#shelf-linha-mascavo"
+]
+},
+
+
+"flex-layout.col#produtos-linha-4-mascavo":{
+
+"children": ["rich-text#linha-mascavo","rich-text#linha-mascavo-bt"
+
+
+],
+"props": {
+  "blockClass": "linha-mascavo-banner-home-bloco-bg"
+}
+},
+
+"rich-text#linha-mascavo": {
+"props": {
+"text": "Mascavo",
+"blockClass": "qinha-mascavo-estrela"
+}
+},
+
+"rich-text#linha-mascavo-bt": {
+"props": {
+"text": "[Ver todos](/mascavo)",
+"blockClass": "linha-mascavo-bt"
+}
+},
+
+
+
+"flex-layout.row#shelf-linha-mascavo": {
+"children": [
+  "list-context.product-list#linha-mascavo"
+]
+},
+"list-context.product-list#linha-mascavo": {
+"blocks": [
+  "product-summary.shelf"
+],
+"children": [
+  "slider-layout#demo-products-linha-mascavo"
+],
+"props": {
+  "orderBy": "OrderByTopSaleDESC",
+  "collection": "142"
+}
+},
+"slider-layout#demo-products-linha-mascavo": {
+"props": {
+  "itemsPerPage": {
+    "desktop": 1,
+    "tablet": 1,
+    "phone": 1
+  },
+  "infinite": true,
+  "fullWidth": false,
+  "blockClass": "shelf"
+}
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"flex-layout.col#produtos-linha-5":{
+  "children": [
+  "flex-layout.row#produtos-linha-5-saches"
+],
+
+"props": {
+  "blockClass": "linha-saches-banner-home-bloco"
+}
+},
+
+
+
+"flex-layout.row#produtos-linha-5-saches":{
+"children": [
+  "flex-layout.col#produtos-linha-5-saches",
+    "flex-layout.row#shelf-linha-saches"
+]
+},
+
+
+"flex-layout.col#produtos-linha-5-saches":{
+
+"children": ["rich-text#linha-saches-estrela","rich-text#linha-saches-bt"],
+"props": {
+  "blockClass": "linha-saches-banner-home-bloco-bg"
+}
+},
+
+
+"rich-text#linha-saches-estrela": {
+"props": {
+"text": "Sachês",
+"blockClass": "linha-saches-estrela"
+}
+},
+
+"rich-text#linha-saches-bt": {
+"props": {
+"text": "[Ver todos](/saches)",
+"blockClass": "linha-saches-bt"
+}
+},
+
+"flex-layout.row#shelf-linha-saches": {
+"children": [
+  "list-context.product-list#linha-saches"
+]
+},
+"list-context.product-list#linha-saches": {
+"blocks": [
+  "product-summary.shelf"
+],
+"children": [
+  "slider-layout#demo-products-linha-saches"
+],
+"props": {
+  "orderBy": "OrderByTopSaleDESC",
+  "collection": "139"
+}
+},
+"slider-layout#demo-products-linha-saches": {
+"props": {
+  "itemsPerPage": {
+    "desktop": 1,
+    "tablet": 1,
+    "phone": 1
+  },
+  "infinite": true,
+  "fullWidth": false,
+  "blockClass": "shelf"
+}
+},
+
+
+"flex-layout.col#produtos-linha-6":{
+  "children": [
+  "flex-layout.row#produtos-linha-6-adocantes"
+],
+
+"props": {
+  "blockClass": "linha-adocantex-banner-home-bloco"
+}
+},
+
+
+"flex-layout.row#produtos-linha-6-adocantes":{
+"children": [
+  "flex-layout.col#produtos-linha-6-adocantes",
+    "flex-layout.row#shelf-linha-adocantes"
+]
+},
+
+
+"flex-layout.col#produtos-linha-6-adocantes":{
+
+"children": ["rich-text#linha-adocantes","rich-text#linha-adocantes-bt"
+
+
+],
+
+"props": {
+  "blockClass": "linha-adocantes-banner-home-bloco-bg"
+}
+},
+
+"rich-text#linha-adocantes": {
+"props": {
+"text": "Adoçantes",
+"blockClass": "linha-adocantes-estrela"
+}
+},
+
+"rich-text#linha-adocantes-bt": {
+"props": {
+"text": "[Ver todos](/adocantes)",
+"blockClass": "linha-adocantes-bt"
+}
+},
+
+"flex-layout.row#shelf-linha-adocantes": {
+"children": [
+  "list-context.product-list#linha-adocantes"
+]
+},
+"list-context.product-list#linha-adocantes": {
+"blocks": [
+  "product-summary.shelf"
+],
+"children": [
+  "slider-layout#demo-products-linha-adocantes"
+],
+"props": {
+  "orderBy": "OrderByTopSaleDESC",
+  "collection": "143"
+}
+},
+"slider-layout#demo-products-linha-adocantes": {
+"props": {
+  "itemsPerPage": {
+    "desktop": 1,
+    "tablet": 1,
+    "phone": 1
+  },
+  "infinite": true,
+  "fullWidth": false,
+  "blockClass": "shelf"
+}
+},
+
   "info-card#home": {
     "props": {
       "id": "info-card-home",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+     // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
       "headline": "Clearance Sale",
       "callToActionText": "DISCOVER",
       "callToActionUrl": "/sale/d",

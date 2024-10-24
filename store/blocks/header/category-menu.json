@@ -4,9 +4,12 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+     "menu-item#linha-premium",
+     "menu-item#linha-demerara",
+     "menu-item#linha-organico",
+     "menu-item#linha-mascavo",
+     "menu-item#linha-saches",
+     "menu-item#linha-adocantes"
     ]
   },
   "menu-item#category-apparel": {
@@ -105,6 +108,123 @@
       }
     }
   },
+
+
+  "menu-item#linha-premium": {
+    "props": {
+      "id": "menu-item-category-premium",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/linha-premium/",
+        "noFollow": false,
+        "tagTitle": "Linha Premium",
+        "text": "Linha Premium"
+      }
+    }
+  },
+
+
+
+  "menu-item#linha-demerara": {
+    "props": {
+      "id": "menu-item-category-demerara",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/demerara",
+        "noFollow": false,
+        "tagTitle": "Demerara",
+        "text": "Demerara"
+      }
+    }
+  },
+
+
+  "menu-item#linha-organico": {
+    "props": {
+      "id": "menu-item-category-organico",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/organico",
+        "noFollow": false,
+        "tagTitle": "Orgânico",
+        "text": "Orgânico"
+      }
+    }
+  },
+
+
+  
+  "menu-item#linha-mascavo": {
+    "props": {
+      "id": "menu-item-category-mascavo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mascavo",
+        "noFollow": false,
+        "tagTitle": "Mascavo",
+        "text": "Mascavo"
+      }
+    }
+  },
+
+
+  "menu-item#linha-saches": {
+    "props": {
+      "id": "menu-item-category-saches",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/saches",
+        "noFollow": false,
+        "tagTitle": "Sachês",
+        "text": "Sachês"
+      }
+    }
+  },
+
+
+  "menu-item#linha-adocantes": {
+    "props": {
+      "id": "menu-item-category-adocantes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/adocante",
+        "noFollow": false,
+        "tagTitle": "Adoçantes",
+        "text": "Adoçantes"
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
   "menu-item#more": {
     "props": {
       "id": "menu-item-custom-sale",

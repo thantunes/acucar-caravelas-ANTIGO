@@ -96,3 +96,154 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel) {
+  min-height: inherit!important;
+}
+
+
+/* HOMEPAGE */
+:global(.vtex-flex-layout-0-x-flexCol--linha-premium-banner-home-bg){
+  background-image: url(/arquivos/AdobeStock_294253087_Preview.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--linha-demerara-banner-home-bg){
+
+  background-image: url(/arquivos/AdobeStock_655724441_Preview.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--linha-organico-banner-home-bloco-bg){
+
+  background-image: url(/arquivos/AdobeStock_615353297_Preview.png);
+}
+
+
+:global(.vtex-flex-layout-0-x-flexCol--linha-organico-banner-home-bloco-bg){
+
+  background-image: url(/arquivos/AdobeStock_615353297_Preview.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--linha-mascavo-banner-home-bloco-bg){
+  background-image: url(/arquivos/AdobeStock_628919544_Preview.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--linha-demerara-banner-home-bloco-bg){
+  background-image: url(/arquivos/AdobeStock_628919544_Preview.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--linha-saches-banner-home-bloco-bg){
+  background-image: url(/arquivos/Cristal-Sache-1000-4.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--linha-adocantes-banner-home-bloco-bg){
+  background-image: url(/arquivos/Frame-Sucralose3.png);
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--home-bloco-linhas-1),
+:global(.vtex-flex-layout-0-x-flexRow--home-bloco-linhas-2) {
+  max-width: 1440px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+
+:global(.vtex-rich-text-0-x-wrapper--linha-premium-estrela-home){
+  background-image: url(/arquivos/estrela-adocantes.png);
+  color: #fff;
+  height: 130px;
+  width: 124px;
+  text-align: center;
+  margin: auto;
+  padding-top: 31px;
+  margin-top: 70px;
+}
+
+:global(.vtex-rich-text-0-x-container--linha-estrela-demerara){
+  background-image: url(/arquivos/estrela-demerara.png);
+  color: #fff;
+  height: 130px;
+  width: 124px;
+  text-align: center;
+  margin: auto;
+  padding-top: 31px;
+  margin-top: 70px;
+
+}
+
+:global(.vtex-rich-text-0-x-wrapper--linha-organico-estrela){
+
+  background-image: url(/arquivos/estrela-organico.png);
+  color: #fff;
+  height: 130px;
+  width: 124px;
+  text-align: center;
+  margin: auto;
+  padding-top: 31px;
+  margin-top: 70px;
+
+}
+
+:global(.vtex-rich-text-0-x-wrapper--qinha-mascavo-estrela){
+
+  background-image: url(/arquivos/estrela-mascavo.png);
+  color: #fff;
+  height: 130px;
+  width: 124px;
+  text-align: center;
+  margin: auto;
+  padding-top: 31px;
+  margin-top: 70px;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--linha-saches-estrela){
+
+  
+  background-image: url(/arquivos/estrela-saches.png);
+  color: #fff;
+  height: 130px;
+  width: 124px;
+  text-align: center;
+  margin: auto;
+  padding-top: 31px;
+  margin-top: 70px;
+}
+
+:global(.vtex-rich-text-0-x-wrapper--linha-adocantes-estrela){
+
+  background-image: url(/arquivos/estrela-adocantes.png);
+  color: #fff;
+  height: 130px;
+  width: 124px;
+  text-align: center;
+  margin: auto;
+  padding-top: 31px;
+  margin-top: 70px;
+
+}
+:global(.vtex-flex-layout-0-x-flexRow--home-bloco-linhas-1)
+:global(.vtex-flex-layout-0-x-flexCol--productRating),
+:global(.vtex-flex-layout-0-x-flexRow--home-bloco-linhas-1)
+:global(.vtex-flex-layout-0-x-flexCol--productRating){display:none!important;}
+
+
+
+:global(.vtex-flex-layout-0-x-flexRow--home-bloco-linhas-1)
+:global(.vtex-product-summary-2-x-spacer),
+:global(.vtex-flex-layout-0-x-flexRow--home-bloco-linhas-1)
+:global(.vtex-product-summary-2-x-spacer){display:none!important;}
+
+
+
+:global(.vtex-rich-text-0-x-wrapper--linha-premium-btr-home),
+:global(.vtex-rich-text-0-x-wrapper--linha-br-demerara),
+:global(.vtex-rich-text-0-x-wrapper--linha-organico-bt),
+:global(.vtex-rich-text-0-x-wrapper--linha-mascavo-bt),
+:global(.vtex-rich-text-0-x-wrapper--linha-saches-bt),
+:global(.vtex-rich-text-0-x-wrapper--linha-adocantes-bt){
+  background-color: #fff;
+  margin: auto;
+  display: block;
+  padding: 0px 20px;
+}
+
+/* END - HOMEPAGE */
